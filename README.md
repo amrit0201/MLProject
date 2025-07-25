@@ -8,7 +8,7 @@ This project uses data from the **Mental Health in Tech Survey** to predict whet
 
 The dataset includes:
 - Demographic details (age, gender, country)
-- Workplace attributes (company size, benefits, wellness programs, remote work)
+- Workplace attributes (company size, benefits, wellness programs, remote work, etc.)
 - Mental health-related variables (family history, interference with work, etc.)
 
 Data source: [Mental Health in Tech Survey](https://www.kaggle.com/osmi/mental-health-in-tech-survey)
@@ -18,12 +18,12 @@ Data source: [Mental Health in Tech Survey](https://www.kaggle.com/osmi/mental-h
 ##  Data Cleaning & Preprocessing
 
 - **Dropped Columns:** `comments`, `Timestamp`, `state`
-- **Age:** Filtered outliers (e.g., age < 18 or > 100), filled missing values with median
+- **Age:** Filtered outliers (e.g., age < 10 or > 100), filled missing values with median
 - **Gender:** Recoded to standard categories
 - **Self-Employed:** Filled missing values with mode
 - **Work Interfere:** Filled missing values with "Unknown"
 - **Encoding:**
-  - Ordinal variables: Label encoded
+  - Ordinal variables: Ordinal encoded
   - Categorical variables: One-hot encoded (e.g., gender, country)
   - Age: Scaled using MinMaxScaler
 
