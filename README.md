@@ -96,13 +96,16 @@ The final model was deployed using **Streamlit**, offering a user-friendly inter
 git clone https://github.com/amrit0201/MLProject.git
 cd MLProject
 
+```
+
 ### 2. Install the required packages
 
 ```bash
 pip install -r requirements.txt
+```
 
 ### 3.Run the Streamlit App 
 
 ```bash
 streamlit run app.py
-
+```
